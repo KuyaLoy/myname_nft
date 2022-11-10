@@ -1,0 +1,31 @@
+@use '../utils' as u;
+
+:root {
+    --textColorWhite: hsl(0, 0%, 100%);
+    --textColor: hsl(319, 49%, 86%);
+    --textColorSecondary: hsl(318, 73%, 64%);
+    --textColorHover: hsl(322, 87%, 50%);
+    --textTitleColor: hsl(185, 77%, 58%);
+    --textTitleBorder: var(--textColorHover);
+    --textTitlehadow: 0px 5px 6px hsl(236, 92%, 41%);
+    --textTitleHover: hsl(305, 100%, 73%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    //font-size: u.rem(18);
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}

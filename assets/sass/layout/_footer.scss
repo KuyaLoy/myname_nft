@@ -1,0 +1,17 @@
+@use '../utils' as u;
+
+.web-view {
+    footer {
+        position: fixed;
+        display: block;
+        bottom: u.rem(40);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        z-index: 0;
+        color: #A1A1A1;
+        font-size: u.rem(20);
+        font-family: "HelveticaNeueLTStd";
+    }
+}

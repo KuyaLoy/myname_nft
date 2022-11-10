@@ -1,0 +1,49 @@
+@use '../utils' as u;
+
+.web-view {
+    header {
+        position: fixed;
+        display: block;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        //background-color: #fff;
+        z-index: 1;
+
+        padding: u.rem(20) u.rem(25);
+
+        .header__wrapper {
+            align-items: center;
+            max-width: u.rem(1440);
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__nav {
+                ul {
+                    display: flex; 
+                    li {
+                        margin: u.rem(0) u.rem(25);
+
+                        a {
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            color: red;
+                            color: #000000;
+                            font-size: u.rem(20);
+                            padding: u.rem(8) u.rem(26);
+                            border-radius: u.rem(9);
+                            background: #FFFBF5 0% 0% no-repeat padding-box;
+                            font-family: "HelveticaNeueLTStd";
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

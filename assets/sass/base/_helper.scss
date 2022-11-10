@@ -1,0 +1,24 @@
+@use '../utils' as u;
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+.grid {
+    display: grid;
+    align-items: center;
+}
+.d-none {
+    display: none !important;
+}
