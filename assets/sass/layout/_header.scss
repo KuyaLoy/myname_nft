@@ -1,6 +1,7 @@
 @use '../utils' as u;
 
 .web-view {
+
     header {
         position: fixed;
         display: block;
@@ -10,7 +11,7 @@
         justify-content: center;
         width: 100%;
         //background-color: #fff;
-        z-index: 1;
+        z-index: 999;
 
         padding: u.rem(20) u.rem(25);
 
@@ -28,8 +29,7 @@
                     display: flex; 
                     li {
                         margin: u.rem(0) u.rem(25);
-
-                        a {
+                        a.link {
                             text-transform: uppercase;
                             text-decoration: none;
                             color: red;
@@ -37,8 +37,76 @@
                             font-size: u.rem(20);
                             padding: u.rem(8) u.rem(26);
                             border-radius: u.rem(9);
-                            background: #FFFBF5 0% 0% no-repeat padding-box;
+                            background: hsla(36, 100%, 98%, 0.70);
                             font-family: "HelveticaNeueLTStd";
+                            cursor: pointer;
+                            
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        
+
+                        &:last-child {
+                            position: relative;
+
+                            a.link {
+                                
+                                padding: u.rem(8) u.rem(20);
+                            }
+
+                            span.arrow-down {
+                                display: inline-block;
+                                height: 20px;
+                                width: 20px;
+                                margin-left: 5px;
+                                background-image: url(../image/header/arrow-down.svg);
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                            }
+                        }
+
+                        .dp-link {
+                            display: none;
+                            flex-direction: column;
+                            position: absolute;
+                            top: 38px;
+                            white-space: nowrap;
+
+                            background: #B5B5B5 0% 0% no-repeat padding-box;
+                            box-shadow: 3px 3px 2px #00000029;
+                            border-radius: 3px;
+
+                            a {
+                                margin: 10px;
+                                text-transform: uppercase;
+                                text-decoration: none;
+                                color: #000000;
+                                font-size: 12px;
+                                font-family: "HelveticaNeueLTStd";
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                span {
+                                    display: inline-block;
+                                    height: 10px;
+                                    width: 10px;
+                                    margin-left: 5px;
+                                    background-image: url(../image/header/link.svg);
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            .dp-link {
+                                display: flex;
+                            }
                         }
                     }
                 }
@@ -46,4 +114,107 @@
         }
     }
 
+}
+
+.mobile-view {
+   header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        //background-color: red;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        flex-direction: column;
+        z-index: 999;
+
+        &.active {
+            background-color: hsla(0, 0%, 100%, 0.80);
+            transition: ease .7s;
+            .button-menu  {
+                .menu {
+                    background-image: url(../image/header/close.png);
+                    background-size: 50%;
+                }
+            }
+        }
+
+        .button-menu {
+            width: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px;
+
+            .menu {
+                display: block;
+                height: 45px;
+                width: 45px;
+                background-image: url(../image/header/menu.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+
+        .nav-list {
+            text-align: center;
+            display: none;
+            
+
+            li {
+                padding: 10px 20px;
+                
+                a.link {
+                    text-transform: uppercase;
+                    font-family: "HelveticaNeueLTStd";
+                    text-decoration: none;
+                    font-size: 30px;
+                    font-weight: bolder;
+                    letter-spacing: -.9px;
+                    color: black;
+                }
+                &:not(:last-child) {
+                    border-bottom: 1px solid #A9A9A9;
+                }
+
+                &:nth-of-type(5) {
+                    .dp-link {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 10px;
+
+                        a {
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            color: #000000;
+                            font-size: 20px;
+                            font-family: "HelveticaNeueLTStd";
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 5px;
+
+                            span {
+                                display: inline-block;
+                                height: 20px;
+                                width: 20px;
+                                background-image: url(../image/header/link.svg);
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                            }
+                        }
+                    }
+                }
+
+                &:last-child {
+                    padding: 20px;
+                    color: #909090;
+                    font-family: "HelveticaNeueLTStd";
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }

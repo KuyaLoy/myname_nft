@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>My Name</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
     <div class="web-view">
         <header>
@@ -16,11 +18,19 @@
                 </div>
                 <div class="header__wrapper__nav">
                     <ul>
-                        <li><a href="#Gallery">Gallery</a></li>
-                        <li><a href="#Story">Story</a></li>
-                        <li><a href="#roadmap">roadmap</a></li>
-                        <li><a href="#team">team</a></li>
-                        <li><a href="!#">Buy</a></li>
+                        <li><a class="link" href="#Gallery">Gallery</a></li>
+                        <li><a class="link" href="#Story">Story</a></li>
+                        <li><a class="link" href="#roadmap">roadmap</a></li>
+                        <li><a class="link" href="#team">team</a></li>
+                        <li>
+                            <a class="link">Buy <span class="arrow-down"></span></a>
+                            <div class="dp-link">
+                                <a href="https://strmnft.com/collection/nft/142196" target="_blank">STREAM
+                                    NFT<span></span></a>
+                                <a href="https://strmnft.com/collection/nft/142196" target="_blank">OPEN
+                                    SEA<span></span></a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </article>
@@ -29,12 +39,14 @@
 
         <main>
             <section id="Home" class="home">
-                <video class="video-bg" src="./assets/video/home/main-bg.mp4" type="video/mp4" poster="./assets/image/home/bg.png" muted loop autoplay>
+                <video class="video-bg" src="./assets/video/home/main-bg.mp4" type="video/mp4"
+                    poster="./assets/image/home/bg.png" muted loop autoplay>
                     Sorry, your browser doesn't support HTML5 video tag.
                 </video>
             </section>
             <section id="Gallery">
-                <video class="video-bg" src="./assets/video/gallery/main-bg.mp4" type="video/mp4" poster="./assets/image/home/bg.png" muted loop autoplay>
+                <video class="video-bg" src="./assets/video/gallery/main-bg.mp4" type="video/mp4"
+                    poster="./assets/image/home/bg.png" muted loop autoplay>
                     Sorry, your browser doesn't support HTML5 video tag.
                 </video>
 
@@ -46,104 +58,153 @@
                     </div>
                     <ul class="wanted__wrapper__list stream">
                         <li class="wanted__wrapper__list__item">
-                            <lottie-player src="./assets/lottie/gallery/stream1.lottie.json"  background="transparent"  speed="1"   loop autoplay></lottie-player>
+                            <lottie-player src="./assets/lottie/gallery/stream1.lottie.json" background="transparent"
+                                speed="1" loop autoplay></lottie-player>
                         </li>
                         <li class="wanted__wrapper__list__item">
-                            <lottie-player src="./assets/lottie/gallery/stream2.lottie.json"  background="transparent"  speed="1"   loop autoplay></lottie-player>
+                            <lottie-player src="./assets/lottie/gallery/stream2.lottie.json" background="transparent"
+                                speed="1" loop autoplay></lottie-player>
                         </li>
                         <li class="wanted__wrapper__list__item">
-                            <lottie-player src="./assets/lottie/gallery/stream3.lottie.json"  background="transparent"  speed="1"   loop autoplay></lottie-player>
+                            <lottie-player src="./assets/lottie/gallery/stream3.lottie.json" background="transparent"
+                                speed="1" loop autoplay></lottie-player>
                         </li>
                         <li class="wanted__wrapper__list__item">
-                            <lottie-player src="./assets/lottie/gallery/stream4.lottie.json"  background="transparent"  speed="1"   loop autoplay></lottie-player>
+                            <lottie-player src="./assets/lottie/gallery/stream4.lottie.json" background="transparent"
+                                speed="1" loop autoplay></lottie-player>
                         </li>
                     </ul>
                     <ul class="wanted__wrapper__list opensea d-none">
                         <li class="wanted__wrapper__list__item">
-                            <lottie-player src="./assets/lottie/gallery/opensea1.lottie.json"  background="transparent"  speed="1"   loop autoplay></lottie-player>
+                            <lottie-player src="./assets/lottie/gallery/opensea1.lottie.json" background="transparent"
+                                speed="1" loop autoplay></lottie-player>
                         </li>
                         <li class="wanted__wrapper__list__item">
-                            <lottie-player src="./assets/lottie/gallery/opensea2.lottie.json"  background="transparent"  speed="1"   loop autoplay></lottie-player>
+                            <lottie-player src="./assets/lottie/gallery/opensea2.lottie.json" background="transparent"
+                                speed="1" loop autoplay></lottie-player>
                         </li>
                         <li class="wanted__wrapper__list__item">
-                            <lottie-player src="./assets/lottie/gallery/opensea3.lottie.json"  background="transparent"  speed="1"   loop autoplay></lottie-player>
+                            <lottie-player src="./assets/lottie/gallery/opensea3.lottie.json" background="transparent"
+                                speed="1" loop autoplay></lottie-player>
                         </li>
                         <li class="wanted__wrapper__list__item">
-                            <lottie-player src="./assets/lottie/gallery/opensea4.lottie.json"  background="transparent"  speed="1"   loop autoplay></lottie-player>
+                            <lottie-player src="./assets/lottie/gallery/opensea4.lottie.json" background="transparent"
+                                speed="1" loop autoplay></lottie-player>
                         </li>
                     </ul>
                 </div>
             </section>
-            <section  id="Story">
-                <video class="video-bg" src="./assets/video/story/main-bg.mp4" type="video/mp4" poster="./assets/image/home/bg.png" muted loop autoplay>
+            <section id="Story">
+                <video class="video-bg" src="./assets/video/story/main-bg.mp4" type="video/mp4"
+                    poster="./assets/image/home/bg.png" muted loop autoplay>
                     Sorry, your browser doesn't support HTML5 video tag.
                 </video>
+
                 <img class="story-effect blink_me" src="./assets/image/story/story-effect.png" alt="story effects">
 
                 <div class="story-wrapper">
                     <div class="book">
-                        <p>Destiny is what you create for yourself, but some children's fate is already determined at birth. Those children are destined by their reality for specific jobs and lives because of the existing corruption in the system and the leaders who rule the nation. In a world where the rich get richer and the poor get poorer, there is one lady, an orphanage director, devoted to caring for abandoned little girls.</p>
-                        <p>She hopes to change the world into a better place for them. Over the years, the girls under her care grew older. They took up various reputable careers, such as entrepreneurs, gamblers, circus performers, magicians, sheriffs, bartenders, musicians, students, and others, whilst secretly plotting to overthrow corrupt leaders. Everyone lives to bring justice to society by playing the role of a spy. Thus… My Name is…</p>
+                        <p>Destiny is what you create for yourself, but some children's fate is already determined at
+                            birth. Those children are destined by their reality for specific jobs and lives because of
+                            the existing corruption in the system and the leaders who rule the nation. In a world where
+                            the rich get richer and the poor get poorer, there is one lady, an orphanage director,
+                            devoted to caring for abandoned little girls.</p>
+                        <p>She hopes to change the world into a better place for them. Over the years, the girls under
+                            her care grew older. They took up various reputable careers, such as entrepreneurs,
+                            gamblers, circus performers, magicians, sheriffs, bartenders, musicians, students, and
+                            others, whilst secretly plotting to overthrow corrupt leaders. Everyone lives to bring
+                            justice to society by playing the role of a spy. Thus… My Name is…</p>
                     </div>
                 </div>
             </section>
-            <section id="roadmap"> 
-                <video class="video-bg" src="./assets/video/roadmap/main-bg.mp4" type="video/mp4" poster="./assets/image/home/bg.png" muted loop autoplay>
+            <section id="roadmap">
+                <video class="video-bg" src="./assets/video/roadmap/main-bg.mp4" type="video/mp4"
+                    poster="./assets/image/home/bg.png" muted loop autoplay>
                     Sorry, your browser doesn't support HTML5 video tag.
                 </video>
 
                 <div class="roadmap-wrapper">
                     <div class="roadmap-cont">
-                        <div class="roadmap-title" onclick='popupTrigger(this, "1st sale – Minting 200 Special NFTs<br>2nd sale – Minting 10,000 NFTs")'>
-                            
+                        <div class="roadmap-title"
+                            onclick='popupTrigger(this, "1st sale – Minting 200 Special NFTs<br>2nd sale – Minting 10,000 NFTs")'>
+
                             NFT MINTING
 
                             <img src="./assets/image/roadmap/1.png" alt="NFT MINTING">
 
                         </div>
-                        <div class="roadmap-title" onclick='popupTrigger(this, "Activation of two Discord servers : <br> Regular/Special community ")'>
-                            
+                        <div class="roadmap-title"
+                            onclick='popupTrigger(this, "Activation of two Discord servers : <br> Regular/Special community ")'>
+
                             COMMUNITY
 
                             <img src="./assets/image/roadmap/2.png" alt="COMMUNITY">
 
                         </div>
-                        <div class="roadmap-title" onclick="popupTrigger(this,'In the future, a total of 10 lucky members <br> from each server will receive GIFs of legendary NFTs. <br> 3 members from the regular server will be randomly selected<br>7 members from the special server will be randomly selected')">
+                        <div class="roadmap-title"
+                            onclick="popupTrigger(this,'In the future, a total of 10 lucky members <br> from each server will receive GIFs of legendary NFTs. <br> 3 members from the regular server will be randomly selected<br>7 members from the special server will be randomly selected')">
 
                             LEGENDARY NFTS
 
                             <img src="./assets/image/roadmap/3.png" alt="LEGENDARY NFTS">
 
                         </div>
-                        <div class="roadmap-title" onclick="popupTrigger(this,'The final last Legend NFT will be created in GIF format with<br>the properties requested by Discord server users.<br>One randomly selected lucky holder will receive all the auction<br> profits')">
+                        <div class="roadmap-title"
+                            onclick="popupTrigger(this,'The final last Legend NFT will be created in GIF format with <br>the properties requested by Discord server users.<br>One randomly selected lucky holder will receive all the auction<br> profits')">
 
                             THE LAST NFT AUCTION
 
                             <img src="./assets/image/roadmap/4.png" alt="THE LAST NFT AUCTION">
 
                         </div>
-                        
-                        <div class="roadmap-title" onclick="popupTrigger(this,'Who is the corrupt leader?<br>Enemy NFTs to be minted later')">
-                            
+
+                        <div class="roadmap-title"
+                            onclick="popupTrigger(this,'Enemy NFTs to be minted later')">
+
                             WHO IS THE ENEMY?<br>WHO IS THE CURRUPT LEADER?
 
                             <img src="./assets/image/roadmap/5.png" alt="WHO IS THE ENEMY? WHO IS THE CURRUPT LEADER?">
-                        
+
                         </div>
-                        <div class="roadmap-title" onclick="popupTrigger(this,'Expanding the Universe, Exploring IRL Events, and More!<br>The battle doesn\'t end here')">
+                        <div class="roadmap-title"
+                            onclick="popupTrigger(this,'Expanding the Universe, Exploring IRL Events, and More!<br>The battle doesn\'t end here')">
                             AND BEYOND...
-                            <img src="./assets/image/roadmap/6.png" alt="AND BEYOND..."> 
+                            <img src="./assets/image/roadmap/6.png" alt="AND BEYOND...">
                         </div>
                     </div>
                 </div>
 
                 <div class="popup-wrapper" id="roadpopper">
-                    <p class="desc">1st sale – Minting 200 Special NFTs 2nd sale – Minting 10,000 NFTs</p>
+                    <p class="desc"></p>
                     <span class="close">X</span>
                 </div>
             </section>
-            <section  id="team">
-                <h1>page 5</h1>
+            <section id="team">
+                <video class="video-bg" src="./assets/video/team/main-bg.mp4" type="video/mp4"
+                    poster="./assets/image/home/bg.png" muted loop autoplay>
+                    Sorry, your browser doesn't support HTML5 video tag.
+                </video>
+
+                <img class="team-effect blink_me" src="./assets/image/team/team-effect.png" alt="team effects">
+                <img class="team-gun" src="./assets/image/team/gun.png" alt="gun team">
+
+                <div class="team-wrapper">
+                    <div class="card">
+                        <img src="./assets/image/team/1.png" alt="agent-1">
+                    </div>
+                    <div class="card">
+                        <img src="./assets/image/team/2.png" alt="agent-2">
+                    </div>
+                    <div class="card">
+                        <img src="./assets/image/team/3.png" alt="agent-3">
+                    </div>
+                    <div class="card">
+                        <img src="./assets/image/team/4.png" alt="agent-4">
+                    </div>
+                    <div class="card">
+                        <img src="./assets/image/team/5.png" alt="agent-5">
+                    </div>
+                </div>
             </section>
         </main>
 
@@ -156,6 +217,109 @@
         <footer>
             <p>© 2022 by Agent Team All Rights Reserved.</p>
         </footer>
+
+    </div>
+
+    <div class="mobile-view">
+        <header>
+            <div class="button-menu">
+                <a onclick="mobPageChange(this,'');">
+                    <img src="./assets/image/header/logo.png" alt="My Name Logo">
+                </a>
+                <span class="menu" onclick="toggleMenu();"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a class="link" onclick="mobPageChange(this,1);">Gallery</a></li>
+                <li><a class="link" onclick="mobPageChange(this,2);">Story</a></li>
+                <li><a class="link" onclick="mobPageChange(this,3);">Roadmap</a></li>
+                <li><a class="link" onclick="mobPageChange(this,4);">Team</a></li>
+                <li>
+                    <a class="link">Buy</a>
+                    <div class="dp-link">
+                        <a href="https://strmnft.com/collection/nft/142196" target="_blank">STREAM NFT<span></span></a>
+                        <a href="https://strmnft.com/collection/nft/142196" target="_blank">OPEN SEA<span></span></a>
+                    </div>
+                </li>
+                <li>
+                    <p>© 2022 by Agent Team All Rights Reserved.</p>
+                </li>
+            </ul>
+        </header>
+
+        <main>
+            <section id="home-mob" style="display: flex;"></section>
+            <section id="gallery-mob">
+                <!-- <video class="video-bg" src="./assets/video/gallery/main-bg-mobile.mp4" type="video/mp4" poster="./assets/image/gallery/bg-mobile.png" muted loop autoplay>
+                    Sorry, your browser doesn't support HTML5 video tag.
+                </video> -->
+
+                <div class="content-nft">
+
+                    <div class="nft-slide">
+                        <div class="marquee-content stream" id="slide-myname-cont-1">
+
+                        </div>
+                    </div>
+
+                    <a class="nft-link" href="https://strmnft.com/collection/nft/142196" target="_blank">STREAM NFT</a>
+
+                    <div class="nft-slide">
+                        <div class="marquee-content opensea" id="slide-myname-cont-2">
+
+                        </div>
+                    </div>
+
+                    <a class="nft-link" href="https://strmnft.com/collection/nft/142196" target="_blank">OPENSEA NFT</a>
+
+                </div>
+
+            </section>
+            <section id="story-mob">
+                <h1>this is story</h1>
+            </section>
+            <section id="roadmap-mob">
+                <div class="card-wrapper">
+                    <div class="card-content"
+                        onclick='popupTrigger2(this, "1st sale – Minting 200 Special NFTs<br>2nd sale – Minting 10,000 NFTs")''>NFT minting</div>
+                    <div class="card-content" onclick='
+                        popupTrigger2(this, "Activation of two Discord servers : <br> Regular/Special community " )'>
+                        Community</div>
+                    <div class="card-content"
+                        onclick="popupTrigger2(this,'In the future, a total of 10 lucky members <br> from each server will receive GIFs of legendary NFTs. <br> 3 members from the regular server will be randomly selected<br>7 members from the special server will be randomly selected')">
+                        Legendary NFTs</div>
+                    <div class="card-content"
+                        onclick="popupTrigger2(this,'The final last Legend NFT will be created in GIF format with <br>the properties requested by Discord server users.<br>One randomly selected lucky holder will receive all the auction<br> profits')">The
+                        last Legend NFT Auction</div>
+                    <div class="card-content"
+                        onclick="popupTrigger2(this,'Enemy NFTs to be minted later')">Who
+                        is the enemy? the corrupt leader?</div>
+                    <div class="card-content"
+                        onclick="popupTrigger2(this,'Expanding the Universe, Exploring IRL Events, and More!<br>The battle doesn\'t end here')">
+                        AND BEYOND...
+                    </div>
+                </div>
+
+                <div class="popup-wrapper-mobile" id="roadpopper">
+                    <p class="desc"></p>
+                    <span class="close">X</span>
+                </div>
+            </section>
+            <section id="team-mob">
+                <video class="video-bg" src="./assets/video/team/main-bg-mobile.mp4" type="video/mp4" muted loop
+                    autoplay>
+                    Sorry, your browser doesn't support HTML5 video tag.
+                </video>
+                <img class="image-bg" src="./assets/image/team/bg-mobile-overlay.png" alt="">
+                <div class="wanted-cont">
+                    <img src="./assets/image/team/1.png" alt="agent-1">
+                    <img src="./assets/image/team/2.png" alt="agent-2">
+                    <img src="./assets/image/team/3.png" alt="agent-3">
+                    <img src="./assets/image/team/4.png" alt="agent-4">
+                    <img src="./assets/image/team/5.png" alt="agent-5">
+                </div>
+            </section>
+
+        </main>
     </div>
 
     <audio id="player" loop autoplay>
@@ -163,58 +327,11 @@
         <source src="./assets/audio/bgm.mp3" type="audio/org" />
     </audio>
 
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-    <script>
-
-        var myAudio = document.getElementById("player");
-        var isPlaying = false;
-
-        function togglePlay() {
-            isPlaying ? myAudio.pause() : myAudio.play();
-        };
-
-        myAudio.onplaying = function() {
-            isPlaying = true;
-            $('.main-music').addClass('active');
-        };
-        myAudio.onpause = function() {
-            isPlaying = false;
-            $('.main-music').removeClass('active');
-        };
-
-
-        const scrollContainer = document.querySelector('main');
-
-        scrollContainer.addEventListener('wheel', (e) => {
-            e.preventDefault();
-            scrollContainer.scrollLeft += e.deltaY;
-        });
-
-        function wantedView(en, platform) {
-            $('.switch-view span').removeClass('active');
-            $(en).addClass('active');
-            $('.wanted__wrapper__list').addClass('d-none');
-
-            if(platform === 'stream') {
-                $('.wanted__wrapper__list.stream').removeClass('d-none');
-            } 
-            if(platform === 'opensea') {
-                $('.wanted__wrapper__list.opensea').removeClass('d-none');
-            } 
-        }
-
-        function popupTrigger(en, message) {
-            $('.popup-wrapper').fadeOut();
-            $('.popup-wrapper > .desc').html(message);
-            $('.popup-wrapper').fadeIn();
-        }
-
-        $('.popup-wrapper > span.close').click(function(){
-            $(this).parent().fadeOut();
-        });
-    </script>
-        
 </body>
+
 </html>

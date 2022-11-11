@@ -29,3 +29,26 @@ body {
     padding: 0;
     scroll-behavior: smooth;
 }
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #f2a318 #e3e3e35d;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    height: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #e3e3e365;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #f2a318;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+  }
