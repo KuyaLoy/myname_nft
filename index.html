@@ -208,12 +208,6 @@
             </section>
         </main>
 
-
-        <picture class="main-music" onclick="togglePlay()">
-            <img src="./assets/image/music/play.png" alt="play music">
-            <img src="./assets/image/music/play-active.png" alt="play music">
-        </picture>
-
         <footer>
             <p>© 2022 by Agent Team All Rights Reserved.</p>
         </footer>
@@ -275,7 +269,36 @@
 
             </section>
             <section id="story-mob">
-                <h1>this is story</h1>
+                <div class="story story-1" style="display: flex;">
+                    <p>Destiny is what you create for yourself, but some children's fate is already determined at
+                        birth. Those children are destined by their reality for specific jobs and lives because of
+                        the existing corruption in the system and the leaders who rule the nation.</p>
+                    <img src="./assets/image/story/pic1.png" alt="eye!">
+                    <p>In a world where
+                        the rich get richer and the poor get poorer, there is one lady, an orphanage director,
+                        devoted to caring for abandoned little girls. She hopes to change the world into a better place for them.</p>
+                        <span class="next icon nextdark" onclick="storyNext(this);"></span>
+                </div>
+                <div class="story story-2" style="display: none;">
+                    <p>Over the years, the girls under
+                        her care grew older. They took up various reputable careers, such as entrepreneurs,
+                        gamblers, circus performers, magicians, sheriffs, bartenders, musicians, students, and
+                        others, whilst secretly plotting to overthrow corrupt leaders.</p>
+
+                        <p>Everyone lives to bring
+                            justice to society by playing the role of a spy. Thus… </p>
+
+                            <img src="./assets/image/story/pic2.png" alt="ball!">
+
+                            <span class="prev icon prevlight" onclick="storyPrev(this);"></span>
+                            <span class="next icon nextlight" onclick="storyNext(this);"></span>
+                </div>
+                <div class="story story-3" style="display: none;">
+                    <p>My Name is...</p>
+                    <video src="./assets/video/story/mynameis.mp4" muted autoplay></video>
+                    <span class="view-more" onclick="mobPageChange(this,1);"></span>
+                    <span class="prev icon prevdark" onclick="storyPrev(this);"></span>
+                </div>
             </section>
             <section id="roadmap-mob">
                 <div class="card-wrapper">
@@ -321,6 +344,11 @@
 
         </main>
     </div>
+
+    <picture class="main-music" onclick="togglePlay()">
+        <img src="./assets/image/music/play.png" alt="play music">
+        <img src="./assets/image/music/play-active.png" alt="play music">
+    </picture>
 
     <audio id="player" loop autoplay>
         <source src="./assets/audio/bgm.mp3" type="audio/mp3" />

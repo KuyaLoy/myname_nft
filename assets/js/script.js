@@ -73,6 +73,9 @@ function mobPageChange(el, page) {
     $(".mobile-view header").removeClass("active");
     $(".mobile-view header .nav-list").hide();
     $('body .mobile-view main section').hide();
+    $('.popup-wrapper-mobile').fadeOut();
+    $('body .mobile-view main section:nth-of-type(3) .story').hide();
+    $('body .mobile-view main section:nth-of-type(3) .story-1').show();
   switch (page) {
     case 1:
       $('#gallery-mob').fadeIn().css('display','flex');
@@ -125,3 +128,12 @@ for(i=1;i<=50; i++){
     document.getElementById('slide-myname-cont-2').appendChild(picture); 
   
   } 
+
+  function storyNext(el) {
+    $(el).parent().hide();
+    $(el).parent().next().show().css('display','flex');
+  }
+  function storyPrev(el) {
+    $(el).parent().hide();
+    $(el).parent().prev().show().css('display','flex');
+  }
