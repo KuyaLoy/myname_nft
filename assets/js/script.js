@@ -66,6 +66,7 @@ element.addEventListener("wheel", (event) => {
 function toggleMenu() {
   $(".mobile-view header .nav-list").toggle();
   $(".mobile-view header").toggleClass("active");
+  $('.mobile-view .dp-link').hide();
   
 }
 
@@ -137,3 +138,7 @@ for(i=1;i<=50; i++){
     $(el).parent().hide();
     $(el).parent().prev().show().css('display','flex');
   }
+
+  $('.dp-button').click(function(){
+    $('.mobile-view .dp-link').slideToggle();
+})

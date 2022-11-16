@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>My Name</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css?ver=1">
 </head>
 
 <body>
@@ -39,16 +39,16 @@
 
         <main>
             <section id="Home" class="home">
-                <video class="video-bg" src="./assets/video/home/main-bg.mp4" type="video/mp4"
+                <!-- <video class="video-bg" src="./assets/video/home/main-bg.mp4" type="video/mp4"
                     poster="./assets/image/home/bg.png" muted loop autoplay>
                     Sorry, your browser doesn't support HTML5 video tag.
-                </video>
+                </video> -->
             </section>
             <section id="Gallery">
-                <video class="video-bg" src="./assets/video/gallery/main-bg.mp4" type="video/mp4"
+                <!-- <video class="video-bg" src="./assets/video/gallery/main-bg.mp4" type="video/mp4"
                     poster="./assets/image/home/bg.png" muted loop autoplay>
                     Sorry, your browser doesn't support HTML5 video tag.
-                </video>
+                </video> -->
 
 
                 <div class="wanted__wrapper">
@@ -95,10 +95,10 @@
                 </div>
             </section>
             <section id="Story">
-                <video class="video-bg" src="./assets/video/story/main-bg.mp4" type="video/mp4"
+                <!-- <video class="video-bg" src="./assets/video/story/main-bg.mp4" type="video/mp4"
                     poster="./assets/image/home/bg.png" muted loop autoplay>
                     Sorry, your browser doesn't support HTML5 video tag.
-                </video>
+                </video> -->
 
                 <img class="story-effect blink_me" src="./assets/image/story/story-effect.png" alt="story effects">
 
@@ -118,10 +118,10 @@
                 </div>
             </section>
             <section id="roadmap">
-                <video class="video-bg" src="./assets/video/roadmap/main-bg.mp4" type="video/mp4"
+                <!-- <video class="video-bg" src="./assets/video/roadmap/main-bg.mp4" type="video/mp4"
                     poster="./assets/image/home/bg.png" muted loop autoplay>
                     Sorry, your browser doesn't support HTML5 video tag.
-                </video>
+                </video> -->
 
                 <div class="roadmap-wrapper">
                     <div class="roadmap-cont">
@@ -158,8 +158,7 @@
 
                         </div>
 
-                        <div class="roadmap-title"
-                            onclick="popupTrigger(this,'Enemy NFTs to be minted later')">
+                        <div class="roadmap-title" onclick="popupTrigger(this,'Enemy NFTs to be minted later')">
 
                             WHO IS THE ENEMY?<br>WHO IS THE CURRUPT LEADER?
 
@@ -180,10 +179,10 @@
                 </div>
             </section>
             <section id="team">
-                <video class="video-bg" src="./assets/video/team/main-bg.mp4" type="video/mp4"
+                <!-- <video class="video-bg" src="./assets/video/team/main-bg.mp4" type="video/mp4"
                     poster="./assets/image/home/bg.png" muted loop autoplay>
                     Sorry, your browser doesn't support HTML5 video tag.
-                </video>
+                </video> -->
 
                 <img class="team-effect blink_me" src="./assets/image/team/team-effect.png" alt="team effects">
                 <img class="team-gun" src="./assets/image/team/gun.png" alt="gun team">
@@ -228,8 +227,8 @@
                 <li><a class="link" onclick="mobPageChange(this,3);">Roadmap</a></li>
                 <li><a class="link" onclick="mobPageChange(this,4);">Team</a></li>
                 <li>
-                    <a class="link">Buy</a>
-                    <div class="dp-link">
+                    <a class="link dp-button">Buy</a>
+                    <div class="dp-link" style="display: none;">
                         <a href="https://strmnft.com/collection/nft/142196" target="_blank">STREAM NFT<span></span></a>
                         <a href="https://strmnft.com/collection/nft/142196" target="_blank">OPEN SEA<span></span></a>
                     </div>
@@ -276,8 +275,9 @@
                     <img src="./assets/image/story/pic1.png" alt="eye!">
                     <p>In a world where
                         the rich get richer and the poor get poorer, there is one lady, an orphanage director,
-                        devoted to caring for abandoned little girls. She hopes to change the world into a better place for them.</p>
-                        <span class="next icon nextdark" onclick="storyNext(this);"></span>
+                        devoted to caring for abandoned little girls. She hopes to change the world into a better place
+                        for them.</p>
+                    <span class="next icon nextdark" onclick="storyNext(this);"></span>
                 </div>
                 <div class="story story-2" style="display: none;">
                     <p>Over the years, the girls under
@@ -285,17 +285,17 @@
                         gamblers, circus performers, magicians, sheriffs, bartenders, musicians, students, and
                         others, whilst secretly plotting to overthrow corrupt leaders.</p>
 
-                        <p>Everyone lives to bring
-                            justice to society by playing the role of a spy. Thus… </p>
+                    <p>Everyone lives to bring
+                        justice to society by playing the role of a spy. Thus… </p>
 
-                            <img src="./assets/image/story/pic2.png" alt="ball!">
+                    <img src="./assets/image/story/pic2.png" alt="ball!">
 
-                            <span class="prev icon prevlight" onclick="storyPrev(this);"></span>
-                            <span class="next icon nextlight" onclick="storyNext(this);"></span>
+                    <span class="prev icon prevlight" onclick="storyPrev(this);"></span>
+                    <span class="next icon nextlight" onclick="storyNext(this);"></span>
                 </div>
                 <div class="story story-3" style="display: none;">
                     <p>My Name is...</p>
-                    <video src="./assets/video/story/mynameis.mp4" muted autoplay></video>
+                    <!-- <video src="./assets/video/story/mynameis.mp4" muted autoplay></video> -->
                     <span class="view-more" onclick="mobPageChange(this,1);"></span>
                     <span class="prev icon prevdark" onclick="storyPrev(this);"></span>
                 </div>
@@ -311,10 +311,10 @@
                         onclick="popupTrigger2(this,'In the future, a total of 10 lucky members <br> from each server will receive GIFs of legendary NFTs. <br> 3 members from the regular server will be randomly selected<br>7 members from the special server will be randomly selected')">
                         Legendary NFTs</div>
                     <div class="card-content"
-                        onclick="popupTrigger2(this,'The final last Legend NFT will be created in GIF format with <br>the properties requested by Discord server users.<br>One randomly selected lucky holder will receive all the auction<br> profits')">The
+                        onclick="popupTrigger2(this,'The final last Legend NFT will be created in GIF format with <br>the properties requested by Discord server users.<br>One randomly selected lucky holder will receive all the auction<br> profits')">
+                        The
                         last Legend NFT Auction</div>
-                    <div class="card-content"
-                        onclick="popupTrigger2(this,'Enemy NFTs to be minted later')">Who
+                    <div class="card-content" onclick="popupTrigger2(this,'Enemy NFTs to be minted later')">Who
                         is the enemy? the corrupt leader?</div>
                     <div class="card-content"
                         onclick="popupTrigger2(this,'Expanding the Universe, Exploring IRL Events, and More!<br>The battle doesn\'t end here')">
@@ -328,10 +328,10 @@
                 </div>
             </section>
             <section id="team-mob">
-                <video class="video-bg" src="./assets/video/team/main-bg-mobile.mp4" type="video/mp4" muted loop
+                <!-- <video class="video-bg" src="./assets/video/team/main-bg-mobile.mp4" type="video/mp4" muted loop
                     autoplay>
                     Sorry, your browser doesn't support HTML5 video tag.
-                </video>
+                </video> -->
                 <img class="image-bg" src="./assets/image/team/bg-mobile-overlay.png" alt="">
                 <div class="wanted-cont">
                     <img src="./assets/image/team/1.png" alt="agent-1">
@@ -358,7 +358,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js?ver=1"></script>
 
 </body>
 
